@@ -270,6 +270,13 @@ function deployInfo(options) {
 module.exports = function (dest, file, content, settings, callback) {
     var root = fis.project.getProjectPath();
     var to = normalizePath(dest.to, root);
+
+    if (settings.host) {
+        settings.receiver = settings.host + '/v1/upload';
+        settings.authApi = settings.host + '/v1/authorize';
+        settings.validateApi = settings.host + '/v1/validate';
+    }
+
     if(settings && settings.receiver) {
         upload(settings.receiver, to, dest.release, content, file, callback, settings);
     } else {

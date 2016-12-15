@@ -1,6 +1,6 @@
 {
   "name": "fis-deploy-default",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "fis default deploy plugin",
   "main": "index.js",
   "scripts": {
