@@ -1,6 +1,6 @@
 {
   "name": "fis-deploy-default",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "fis default deploy plugin",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/fex-team/fis-deploy-default.git"
+  },
+  "dependencies": {
+    "prompt": "1.0.0"
   }
 }
