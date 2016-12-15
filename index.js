@@ -217,7 +217,7 @@ function upload(receiver, to, release, content, file, callback, settings){
                     requireEmail(settings, function(error, info) {
                         if (error) {
                             return fis.log.error('upload file [' + subpath + '] to [' + to +
-                            '] by receiver [' + receiver + '] error [' + error + ']');
+                            '] by receiver [' + receiver + '] error [' + error.errmsg + ']');
                         }
 
                         upload(receiver, to, release, content, file, callback, settings);
