@@ -255,7 +255,7 @@ function deployInfo(options) {
     // setter
     return options && fis.util.write(conf, JSON.stringify(options, null, 2));
   } else {
-    let ret = null;
+    var ret = null;
 
     try {
       // getter
