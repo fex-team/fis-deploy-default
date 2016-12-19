@@ -208,6 +208,7 @@ function upload(receiver, to, release, content, file, callback, settings){
         //url, request options, post data, file
         receiver, null, { to : to + release, email: info.email, token: info.token }, content, subpath,
         function(err, res){
+            var json = null;
             try {
               json = res ? JSON.parse(res) : null;
             } catch (e) {}
